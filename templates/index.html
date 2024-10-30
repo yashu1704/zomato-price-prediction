@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Price Prediction</title>
+</head>
+<body>
+    <h1>Zomato Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="restaurant_type">Restaurant Type:</label>
+        <input type="text" id="restaurant_type" name="restaurant_type" required><br><br>
+        
+        <label for="avg_cost">Average Cost (Two People):</label>
+        <input type="number" id="avg_cost" name="avg_cost" required><br><br>
+        
+        <label for="num_ratings">Number of Ratings:</label>
+        <input type="number" id="num_ratings" name="num_ratings" required><br><br>
+        
+        <label for="online_order">Online Order (Yes/No):</label>
+        <select id="online_order" name="online_order" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        
+        <label for="table_booking">Table Booking (Yes/No):</label>
+        <select id="table_booking" name="table_booking" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
